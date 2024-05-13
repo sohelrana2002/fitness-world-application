@@ -1,0 +1,247 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --primary-hue: 210;
+    --gray-hue: 240;
+    --color-primary: hsl(var(--primary-hue), 100%, 50%);
+    --color-primary-variant: hsl(var(--primary-hue), 100%, 65%);
+    --color-secondary:#ffb116;
+    --color-gray-100: hsl(var(--gray-hue), 47%, 94%); 
+    --color-gray-200: hsl(var(--gray-hue), 26%, 75%); 
+    --color-gray-300: hsl(var(--gray-hue), 24%, 64%); 
+    --color-gray-400: hsl(var(--gray-hue), 16%, 41%); 
+    --color-gray-500: hsl(var(--gray-hue), 44%, 25%); 
+    --color-gray-600: hsl(var(--gray-hue), 48%, 15%); 
+
+    --container-width-lg: 85%;
+    --container-width-md: 92%;
+
+    --transition: all 500ms ease;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-gray-200);
+    line-height: 1.7;
+    overflow-x: hidden;
+    background: var(--color-gray-600) url(./assets/bg_texture.png);
+}
+.container{
+    width: var(--container-width-lg);
+    max-width: 1920px;
+    margin: 0 auto;
+}
+h1, h2, h3, h4, h5{
+    line-height: 1.5;
+    color: var(--color-gray-100);
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+a{
+    color: var(--color-gray-100);
+}
+img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+
+.btn{
+    color: var(--color-gray-100);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.9rem 2rem;
+    background: var(--color-primary);
+    border-radius: 1.5rem;
+    transition: var(--transition);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.btn:hover{
+ background: var(--color-secondary);
+ color: var(--color-gray-600);
+}
+.btn.lg{
+    padding: 1.2rem 3rem;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+}
+.btn.sm{
+    padding: 0.4rem 1.2rem;
+    font-size: 0.9rem;
+}
+.btn.sm:hover{
+    background: var(--color-gray-100);
+}
+
+section{
+    margin-top: 10rem;
+}
+.section_head{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.section_head span{
+    background: var(--color-gray-500);
+    padding: .8rem;
+    border-radius: 1rem;
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card{
+    background: var(--color-gray-500);
+    border: 2px solid transparent;
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 0 3rem 0 3rem;
+    transition: var(--transition);
+}
+.card:hover{
+    background: transparent;
+    border-color: var(--color-gray-400);
+    cursor: default;
+}
+.card .program_image{
+    width: 5rem;
+    height: 5rem;
+    background: var(--color-primary);
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+    transition: var(--transition);
+}
+.card .code_image{
+    width: 3rem;
+    height: 3rem; 
+}
+.card:hover .program_image{
+    background: var(--color-secondary);
+
+}
+.card small{
+    margin-top: 1rem;
+    display: block;
+    font-weight: 300;
+}
+
+
+/* =====About page(header section)====== */
+.header{
+    margin-top: 5rem;
+    height: 25rem;
+    overflow: hidden;
+    border-bottom: 2px solid var(--color-gray-400);
+}
+.header_container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: grid;
+    place-items: center;
+    background: black;
+}
+.header_containe_bg{
+    position: absolute;
+    width: 100%;
+    opacity: .3;
+}
+.header_content{
+    position: relative;
+    width: 44%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--color-gray-100);
+}
+.header_content p{
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====media quires (for mediam screen)====== */
+
+@media screen and (max-width: 1024px) {
+    .container{
+        width: var(--container-width-md);
+    }
+    h1{
+        font-size: 2rem;
+    }  
+    h2{
+        font-size: 1.2rem;
+    } 
+    .header_content{
+        width: 76%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====media quires (for small screen)====== */
+
+@media screen and (max-width: 600px) {
+    section{
+        margin-top: 7rem;
+    }
+    h1{
+        font-size: 2.2rem;
+        line-height: 1.3;
+    }  
+    h2{
+        font-size: 1.2rem;
+    } 
+    .header{
+        width: fit-content;
+    }
+    .header_content{
+        width: var(--container-width-md);
+        padding: 3rem 0;
+    }
+    .header_content p{
+        font-size: .8rem;
+    }
+}
+
+
+
+
