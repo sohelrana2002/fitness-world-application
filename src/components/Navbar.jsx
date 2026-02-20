@@ -13,7 +13,11 @@ const Navbar = () => {
     <div>
       <nav>
         <div className="container nav_container">
-          <Link to="/" className="logo" onClick={() => setIsNavShowing(false)}>
+          <Link
+            to="fitness-world/"
+            className="logo"
+            onClick={() => setIsNavShowing(false)}
+          >
             <img src={Logo} alt="Nav Logo" />
           </Link>
           <ul className={`nav_links ${isNavShowing ? "show_nav" : "hide_nav"}`}>
@@ -44,5 +48,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
