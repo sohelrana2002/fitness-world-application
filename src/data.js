@@ -34,27 +34,27 @@ import GalleryImage15 from "./assets/gallery15.jpg";
 export const links = [
   {
     name: "Home",
-    path: "/fitness-world-application/",
+    path: "/",
   },
   {
     name: "About",
-    path: "/fitness-world-application/about",
+    path: "/about",
   },
   {
     name: "Gallery",
-    path: "/fitness-world-application/gallery",
+    path: "/gallery",
   },
   {
     name: "Plans",
-    path: "/fitness-world-application/plans",
+    path: "/plans",
   },
   {
     name: "Trainers",
-    path: "/fitness-world-application/trainers",
+    path: "/trainers",
   },
   {
     name: "Contact",
-    path: "/fitness-world-application/contact",
+    path: "/contact",
   },
 ];
 
