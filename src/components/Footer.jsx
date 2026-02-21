@@ -34,12 +34,12 @@ const Footer = () => {
 
         <article>
           <h4>Permalinks</h4>
-          <Link to="fitness-world-application/">Home</Link>
-          <Link to="fitness-world-application/about">About</Link>
-          <Link to="fitness-world-application/gallery">Gallery</Link>
-          <Link to="fitness-world-application/plans">Plans</Link>
-          <Link to="fitness-world-application/trainers">Trainers</Link>
-          <Link to="fitness-world-application/contact">Contact</Link>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/gallery">Gallery</Link>
+          <Link to="/plans">Plans</Link>
+          <Link to="/trainers">Trainers</Link>
+          <Link to="/contact">Contact</Link>
         </article>
 
         <article>

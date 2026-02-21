@@ -14,18 +14,12 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route exact path="fitness-world-application/" element={<Home />} />
-        <Route path="fitness-world-application/about" element={<About />} />
-        <Route
-          path="fitness-world-application/contact"
-          element={<Contacts />}
-        />
-        <Route path="fitness-world-application/gallery" element={<Gallery />} />
-        <Route path="fitness-world-application/plans" element={<Plans />} />
-        <Route
-          path="fitness-world-application/trainers"
-          element={<Trainers />}
-        />
+        <Route exact path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contacts />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/plans" element={<Plans />} />
+        <Route path="/trainers" element={<Trainers />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
