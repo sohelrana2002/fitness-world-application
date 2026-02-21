@@ -1,6 +1,6 @@
 {
   "name": "fitness-world-application",
-  "homepage": "https://sohelrana2002.github.io/fitness-world-application/",
+  "homepage": "https://sohelrana2002.github.io/fitness-world-application",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,8 +9,7 @@
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
