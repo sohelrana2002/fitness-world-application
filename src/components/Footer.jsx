@@ -8,7 +8,7 @@ const Footer = () => {
     <footer>
       <div className="container footer_container">
         <article>
-          <Link to="fitness-world/" className="logo">
+          <Link to="fitness-world-application/" className="logo">
             <img src={Logo} alt="Logo" />
           </Link>
           <p>
@@ -34,12 +34,12 @@ const Footer = () => {
 
         <article>
           <h4>Permalinks</h4>
-          <Link to="fitness-world/">Home</Link>
-          <Link to="fitness-world/about">About</Link>
-          <Link to="fitness-world/gallery">Gallery</Link>
-          <Link to="fitness-world/plans">Plans</Link>
-          <Link to="fitness-world/trainers">Trainers</Link>
-          <Link to="fitness-world/contact">Contact</Link>
+          <Link to="fitness-world-application/">Home</Link>
+          <Link to="fitness-world-application/about">About</Link>
+          <Link to="fitness-world-application/gallery">Gallery</Link>
+          <Link to="fitness-world-application/plans">Plans</Link>
+          <Link to="fitness-world-application/trainers">Trainers</Link>
+          <Link to="fitness-world-application/contact">Contact</Link>
         </article>
 
         <article>
@@ -53,7 +53,7 @@ const Footer = () => {
 
         <article>
           <h4>Get In Touch</h4>
-          <Link to="fitness-world/contact">Contact Us</Link>
+          <Link to="fitness-world-application/contact">Contact Us</Link>
           <Link to="/s">Support</Link>
         </article>
       </div>

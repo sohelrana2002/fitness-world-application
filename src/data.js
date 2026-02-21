@@ -1,4 +1,3 @@
-import React from "react";
 // import {SiOpenaigym} from 'react-icons/si'
 import Code from "./assets/icons8-code-50.png";
 //for avater

@@ -14,7 +14,7 @@ const Navbar = () => {
       <nav>
         <div className="container nav_container">
           <Link
-            to="fitness-world/"
+            to="fitness-world-application/"
             className="logo"
             onClick={() => setIsNavShowing(false)}
           >
