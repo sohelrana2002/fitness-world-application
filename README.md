@@ -7,7 +7,7 @@ enthusiasts to explore workouts, nutrition tips, and stay motivated in their fit
 
 ## 🌐 Live Demo
 
-- **Website (User Side)**: [View Live Website](https://e-book-application-five.vercel.app)
+- **Website*: [View Live Website](https://fitness-world-application.vercel.app)
 
 ## 🌟 Features
 
